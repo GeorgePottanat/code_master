@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html lang="en" ng-app="App">
+<head>
+	<meta charset="UTF-8">
+	<title>Chores App</title>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="http://code.angularjs.org/1.4.5/angular.js"></script>
+<script src="http://code.angularjs.org/1.4.5/angular-route.js"></script>
+<script src="app.js"></script>
+
+<style type="text/css">
+	.done{
+		text-decoration: line-through;
+		color:red; 
+	}
+</style>
+
+</head>
+<body>
+<div ng-controller="todoController">
+	<form name="frm" ng-submit="addTodo()">
+		<input type="text" ng-model="newTodo" name="newTodo" required/>
+		<button ng-disabled="!frm.$valid">Add</button>
+	</form>
+		<button ng-click="clearCompleted">Clear Completed</button>
+<ul>
+<li ng-repeat="todo in todos">
+	<input type="checkbox" ng-model="todo.done"/>
+	<span ng-class="{'done': todo.done}">{{todo.title}}</span>
+	
+</li>
+</ul>
+</div>
+
+</body>
+</html>

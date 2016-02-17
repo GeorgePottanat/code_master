@@ -1,0 +1,154 @@
+<!DOCTYPE>
+
+<html>
+ <head>
+     <title> Halo 5 Clan </title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <link href = "css/bootstrap.min.css" rel ="stylesheet"/>
+     <link href = "css/style.css" rel = "stylesheet" />
+     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+     <script src="js/bootstrap.js"></script>     
+ 
+ </head>
+ <body>
+     <div class="navbar navbar-default navbar-static-top">
+         <div class="container">
+             <div class="navbar-brand">
+                 H5 the Clan
+             </div>
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+             <div class="collapse navbar-collapse" id="navHeaderCollapse">
+                 <ul class="nav navbar-nav navbar-right">
+                     <li class="active"> 
+                         <a href="#"> Home </a>
+                     </li>
+                        <li> 
+                         <a href="#"> Members </a>
+                     </li>
+                     <li> 
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"> SocialMedia <b class="caret"></b> </a>
+                         <ul class="dropdown-menu">
+                             <li> <a href="#"> Google </a></li>
+                             <li> <a href="#"> Facebook </a></li>
+                             
+                         </ul>
+                     </li>
+                        <li> 
+                         <a href="#contact" data-toggle="modal"> Contact </a>
+                     </li>                     
+                 </ul>
+                 
+             </div>
+         </div>
+      </div>
+      
+  <div class="container">
+     <div class="row"> 
+         
+         <div class="col-lg-9"> 
+             
+           <div class = "panel panel-default">
+               
+               <div class="panel-body">
+                   
+                   <div class="page-header"><h1>An article on MongoDb</h1> <small> by George Pottanat </small> </div>
+                   <img class="article-image" src="http://s3.amazonaws.com/info-mongodb-com/MongoDB_Logo_Full.png"/>
+                   <p>MongoDB is one of the most widely talked about databases for Big Data Application. In today’s development environment, there are three types of database designs: RDBMS, OLAP and NoSQL. Developed by 10gen, MongoDB is a NoSQL database which means that it’s a non-relational database. 
+“Scalable, open source, high performance, document oriented database” – 10gen
+Non-relational means that it doesn’t express the relational algebra like SQL. A non-relational database is a database where there are no joins, no complex transactions (multi-row) and can be a horizontally scalable architecture. Scalability is why many companies choose this Document Oriented Database. However some businesses don’t use MongoDB if the business needs a database which handles very complex transactions.
+In MongoDB the basic structure of the document oriented database:
+•	database
+•	collection (like a SQL table) 
+•	 document (like an SQL row).
+When data is saved into MongoDB, it’s stored as a JSON store-structured documents expressed using flexible and light-weight JSON (JavaScript Object Notation).
+Ex. JSON document: { key1: ‘value1’, key2: ‘value2’, key3: [‘value3’, ‘value4’, ‘value5’] };
+Unlike SQL with set tables and columns, MongoDB is great because data can have a Dynamic and Flexible schema. Suppose one document has a key4 and the other documents don’t have a key4, in SQL you can’t add the data of key 4 into a list in the same table as the other document with no key4.
+Within MongoDB database, the data is stored as BSON (sterilization format). This is how it creates flexibility to skip around in the document oriented database. 
+Here is a list of companies who use MongoDB:
+ 
+•	Walmart
+•	Adobe
+•	Craigslist
+•	eBay
+•	FIFA (EA Sports)
+•	FourSquare
+•	LinkedIn
+•	McAfee
+•	SAP
+•	Shutterfly
+•	FaceBook
+•	AstraZeneca
+•	Cisco
+•	BuzFeed
+•	Medtronic
+•	eHarmony
+•	Google
+•	New York Time 
+ </p>
+                   
+               </div>
+               
+           </div>
+            
+     </div>
+     
+     <div class="col-lg-3">
+         <div class="list-group">
+             <a href="#" class="list-group-item">
+                 <h4> Great Article! </h4>
+                 <p>This is a great paragraph. There is alot to learn from this page!</p>
+             </a>
+             <a href="#" class="list-group-item">
+                 <h4> Great Article! </h4>
+                 <p>This is a great paragraph. There is alot to learn from this page!</p>
+             </a>
+             <a href="#" class="list-group-item">
+                 <h4> Great Article! </h4>
+                 <p>This is a great paragraph. There is alot to learn from this page!</p>
+             </a>
+         </div>
+         
+     </div>
+     
+     </div>
+     </div>
+     
+     
+     
+     
+     
+     
+     
+     
+     <div class="navbar navbar-default navbar-fixed-bottom">
+         <div class="container">
+             
+             <p class="navbar-text pull-left"> Site built by George Pottanat </p>
+            <a class="navbar-btn btn btn-primary pull-right"> Click here! </a>
+         </div>
+     </div>
+
+     <div class="modal fade" id="contact" role="dialog">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                 <div class="modal-header">
+                     <p> Contact Us! </p>
+                 </div>
+                 <div class="modal-body"> 
+                     <p>Chapter one introduces the scene, the setting, the circumstances and the characters involved determining the reasons for the Bhagavad-Gita's revelation. The scene is the sacred plain of Kuruksetra. The setting is a battlefield. The circumstances is war. The main characters are the Supreme Lord Krishna and Prince Arjuna, witnessed by four million soldiers led by their respective military commanders. After naming the principal warriors on both sides, Arjunas growing dejection is described due to the fear of losing friends and relatives in the course of the impending war and the subsequent sins attached to such actions. Thus this chapter is entitled: Lamenting the Consequence of War. </P>
+                 </div>
+                 <div class="modal-footer">
+                     <a class="btn btn-danger pull-left" data-dismiss="modal"> Close </a>
+                     <a class="btn btn-danger pull-right" data-dismiss="modal"> More Info </a>
+                 </div>
+             </div>
+        </div>
+     </div>     
+     
+</body>
+</html>

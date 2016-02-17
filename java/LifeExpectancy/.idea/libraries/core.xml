@@ -1,0 +1,41 @@
+<component name="libraryTable">
+  <library name="core">
+    <CLASSES>
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/core.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt-natives-linux-armv6hf.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt-natives-windows-i586.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt-natives-macosx-universal.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt-natives-windows-amd64.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt-natives-linux-amd64.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt-natives-linux-i586.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all-natives-linux-amd64.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all-natives-linux-armv6hf.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all-natives-linux-i586.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all-natives-macosx-universal.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all-natives-windows-amd64.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all-natives-windows-i586.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all.jar!/" />
+      <root url="jar://C:/eclipse/Unfolding/library/Unfolding.jar!/" />
+      <root url="jar://C:/eclipse/Unfolding/library/log4j-1.2.15.jar!/" />
+      <root url="jar://C:/eclipse/Unfolding/library/json4processing.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <NATIVE>
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt-natives-linux-armv6hf.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt-natives-windows-i586.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt-natives-windows-amd64.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt-natives-linux-amd64.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-rt-natives-linux-i586.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all-natives-linux-amd64.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all-natives-linux-armv6hf.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all-natives-linux-i586.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all-natives-windows-amd64.jar!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-all-natives-windows-i586.jar!/" />
+    </NATIVE>
+    <SOURCES>
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/gluegen-java-src.zip!/" />
+      <root url="jar://C:/eclipse/processing-3.0b7/core/library/jogl-java-src.zip!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<hmtl ng-app="myApp">
+	<head>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+</head>
+	<body>
+
+<div class="container">
+
+<div ng-controller="mainController">
+
+	<div>
+		<label> What is your twitter handle? </label>
+		<input type="text" ng-model="handle"/>
+	</div>
+
+	<div class="alert" ng-class="{'alert-warning': handle.length < characters, 'alert-danger': handle.length > characters+10}" ng-show="handle.length !== characters">
+		<div ng-show=" handle.length < characters">
+			You have too little characters
+		</div>
+		<div ng-show=" handle.length >characters+10"> Caution, too many characters!
+		</div>
+
+	</div>
+
+	<hr/>
+
+	<h1>
+		www.twitter.com/{{lowercasehandle()}}
+	</h1>
+
+	<h3> Rules <h3>
+	<ul>
+		<li  ng-repeat="rule in rules"> 
+			{{rule.rulename}}
+		</li>
+	</ul>
+
+</div>
+
+</div>
+
+	</body>
+
+</html>

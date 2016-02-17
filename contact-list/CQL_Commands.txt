@@ -1,0 +1,13 @@
+1. Open CQL Shell
+
+2. Create a database called contactlist
+	CREATE KEYSPACE contactlist WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3};
+
+3. Now create a Table with the following columns: id, first_name, last_name, email, phone
+	CREATE TABLE contacts (id uuid, first_name text, last_name text, email text, phone text, PRIMARY KEY(id));
+
+4. Now add dummy data for fun in a 'batch':
+	BEGIN BATH (press enter)
+		INSERT INTO contacts(id, first_name, last_name, email, phone) VALUES (now(), 'George', 'Pottanat', 'pottanat.george@gmail.com', '571-426-1461')
+                INSERT INTO contacts(id, first_name, last_name, email, phone) VALUES (now(), 'John', 'Doe', 'john.doe@gmail.com', '123-456-1234')
+	APPLY BATCH;
